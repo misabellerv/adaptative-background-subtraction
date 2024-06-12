@@ -11,7 +11,7 @@ https://github.com/misabellerv/adaptative-background-subtraction/assets/88784791
 - **Colored Mask**: Applies a red mask over the moving objects for better visualization.
 - **Combined View**: Displays the original frame, binary mask, and colored masked frame in a single window.
 
-- ### 1. Adaptive Background Subtraction
+### 1. Adaptive Background Subtraction
 
 The first step is to calculate an adaptive background model. This is done by continuously updating a background model based on the video frames. The background model represents the static scenery present in the scene.
 
