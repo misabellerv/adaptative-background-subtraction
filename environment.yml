@@ -1,0 +1,5 @@
+name: background
+channels:
+  - conda-forge
+  - defaults
+prefix: C:\Users\Isabelle\miniconda3\envs\background
