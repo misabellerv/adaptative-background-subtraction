@@ -23,7 +23,7 @@ cap = cv2.VideoCapture(VIDEO_PATH)
 if not cap.isOpened():
     print("Error opening video!")
 
-# Define o tamanho desejado para o vídeo redimensionado
+# Resize video
 desired_width = 700
 desired_height = 500
 
