@@ -2,10 +2,7 @@
 
 This project provides a tool to perform adaptive background subtraction and masking on video files. The resulting video highlights moving objects with a red mask and displays the original frame, the binary mask, and the colored masked frame side by side.
 
-<video width="640" height="360" controls>
-  <source src="videos/birds_output.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://github.com/misabellerv/adaptative-background-subtraction/assets/88784791/e4ab7740-bc81-4809-b2e7-87b31e58f077
 
 ## Features
 
