@@ -11,6 +11,30 @@ https://github.com/misabellerv/adaptative-background-subtraction/assets/88784791
 - **Colored Mask**: Applies a red mask over the moving objects for better visualization.
 - **Combined View**: Displays the original frame, binary mask, and colored masked frame in a single window.
 
+- ### 1. Adaptive Background Subtraction
+
+The first step is to calculate an adaptive background model. This is done by continuously updating a background model based on the video frames. The background model represents the static scenery present in the scene.
+
+- **Initialization of Background Model**: Initially, the background model is initialized with the first frame of the video.
+  
+- **Update of Background Model**: For each new frame of the video, the background model is gradually updated to adapt to changes in the environment. This is done by calculating a weighted average between the existing background model and the new frame. The learning rate determines how quickly the background model adapts to changes in the scene. 
+
+### 2. Background Subtraction
+
+Once the background model is updated, it can be used to subtract the background from each frame of the video. This results in an image that highlights pixels that differ from the static background.
+
+### 3. Masking
+
+The next step is to create a binary mask that identifies pixels representing moving objects. This is done by applying a threshold to the subtracted background image. Pixels that exceed the threshold are marked as moving objects, while pixels that do not exceed the threshold are considered part of the static background.
+
+### 4. Colored Masking
+
+For better visualization, a colored mask can be applied over the moving objects in the original image. This highlights the moving objects in red, for example, while keeping the rest of the scene unchanged.
+
+### 5. Combined Visualization
+
+Finally, the original video frames, the binary mask, and the colored mask can be combined into a single image for visualization. This allows for a direct comparison between the original video and the highlighted moving objects.
+
 ## Requirements
 
 - Python 3.x
