@@ -23,9 +23,16 @@ cap = cv2.VideoCapture(VIDEO_PATH)
 if not cap.isOpened():
     print("Error opening video!")
 
+# Define o tamanho desejado para o vídeo redimensionado
+desired_width = 700
+desired_height = 500
+
 while cap.isOpened():
     ret, frame = cap.read()
     if ret:
+        # Redimensiona o frame para o tamanho desejado
+        frame = cv2.resize(frame, (desired_width, desired_height))
+
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         if first_frame:
             h, w, c = frame.shape
