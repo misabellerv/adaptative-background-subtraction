@@ -30,7 +30,7 @@ desired_height = 500
 while cap.isOpened():
     ret, frame = cap.read()
     if ret:
-        # Redimensiona o frame para o tamanho desejado
+        # Resize frame
         frame = cv2.resize(frame, (desired_width, desired_height))
 
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
